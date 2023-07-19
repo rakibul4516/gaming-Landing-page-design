@@ -255,7 +255,7 @@ body{
 }
 .small-image{
     position: relative;
-    top: -250px;
+    bottom: 250px;
     right: 70px;
     width: 250px;
     height: 300px;
@@ -263,7 +263,7 @@ body{
 
         /* Tag section  */
 .tag-section{
-    margin: 3% 8%;
+    margin: -15% 8% 0;
     display: grid;
     grid-template-columns: repeat(5,1fr);
 }
@@ -299,6 +299,74 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 10px 20px;
+}
+
+
+        /* Footer section */
+footer{
+    background-color: #0B0223;
+}
+.footer-section{
+    text-align: center;
+    margin-top: 50px;
+    padding: 100px 0;
+}
+.footer-logo-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.footer-logo-items > .website-name{
+    color: #FFF;
+}
+.footer-bar{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: center;
+    padding: 30px 250px;
+    gap: 20px;
+    
+}
+.social-links{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: center;
+    padding: 30px 300px;
+    gap: 20px;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    padding: 30px 250px;
+    gap: 20px;
+    
+}
+.footer-bar-item a{
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.service-text a{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.social-logo a{
+    text-decoration: none;
+}
+
+.fa-brands{
+    font-size: 3rem;
+    color: #FFF;
+}
+.copy-right{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 
@@ -391,6 +459,7 @@ body{
     .small-image{
         width: 50%;
         height: 50%;
+        bottom: 100px;
     }
     .play-game-texts{
         padding: 0;
@@ -411,6 +480,19 @@ body{
     .tag:hover{
         padding: 10px;
 
+    }
+    /* Footer section */
+    .footer-bar{
+        grid-template-columns: repeat(3,1fr);
+        padding: 30px;
+    }
+    .social-links{
+        grid-template-columns: repeat(3,1fr);
+        padding: 30px;
+    }
+    .services{
+        grid-template-columns: repeat(2,1fr);
+        padding: 30px;
     }
 
 }
