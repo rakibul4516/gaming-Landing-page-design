@@ -291,14 +291,12 @@ body{
     margin: -15% 8% 0;
     display: grid;
     grid-template-columns: repeat(5,1fr);
+
 }
 
-.tag-section a{
+.tag > a{
     text-decoration: none;
-}
-.tag{
     display: flex;
-    width: max-content;
     align-items: center;
     border: 2px solid white;
     border-radius: 50px;
@@ -316,7 +314,7 @@ body{
 
 }
 
-.tag:hover{
+.tag > a:hover{
     border: 2px solid #F948B2;
     border-radius: 50px;
     background: #FFF;
@@ -385,12 +383,20 @@ footer{
 }
 .social-logo a{
     text-decoration: none;
+    color: #FFF;
 }
 
 .social-logo i{
     font-size: 3rem;
-    color: #FFF;
 }
+
+.fa-facebook{
+    color: #1877F2;
+}
+.fa-youtube{
+    color: #FF0000;
+}
+
 .copy-right{
     color: rgba(255, 255, 255, 0.60);
     font-size: 1rem;
@@ -410,6 +416,7 @@ footer{
     }
     .nav-items{
         flex-direction: column;
+        margin-bottom: 30px;
     }
     .list-items{
         margin-top: 30px;
@@ -422,12 +429,13 @@ footer{
 
     .banner-container{
         flex-direction: column-reverse;
-        margin: 30px;
-        padding: 30px 0;
+        margin: 0;
+        padding: 20px 0;
     }
     .banner-texts{
-        padding: 20px;
+        padding: 30px 0 0;
         text-align: center;
+        
     }
     .banner-boldtext{
         font-size: 65px;
@@ -456,6 +464,9 @@ footer{
     .gamers-image{
         height: 100%;
         width: 100%;
+    }
+    .gamers-headline{
+        font-size: 2rem;
     }
     .gamers-text{
         text-align: center;
@@ -489,7 +500,8 @@ footer{
     /* Play game section */
     .play-game-section{
         flex-direction: column-reverse;
-        margin: 30px;
+        margin: 5% 17% 0;
+        padding: 0;
     }
     .player-image{
         width: 100%;
@@ -498,29 +510,37 @@ footer{
     }
     .small-image{
         width: 50%;
-        height: 50%;
+        height: 100%;
         bottom: 100px;
     }
     .play-game-texts{
         padding: 0;
-        text-align: center;
+        text-align: left;
     }
 
     /* Tag section */
     .tag-section{
-        margin: 30px 100px;
-        grid-template-columns: repeat(1,1fr);
-        
-    }
-    .tag{
-        padding: 10px;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        margin: 5% 0;
+        padding: 20px;
+        gap: none;
     }
     .tag-image{
-        height: 30px;
-        width: 30px;
+        width: 20px;
+        height: 20px;
     }
-    .tag:hover{
+    .tag-text{
+        font-size: .7rem;
+        font-weight: 400;
+    }
+    .tag > a{
         padding: 10px;
+        margin: 0;
+
+    }
+    .tag > a:hover{
+        padding: 10px ;
 
     }
     /* Footer section */
@@ -650,14 +670,14 @@ footer{
                 margin: 30px;
                 grid-template-columns: repeat(3,1fr);
             }
-            .tag{
+            .tag > a{
                 padding: 10px;
             }
             .tag-image{
                 height: 30px;
                 width: 30px;
             }
-            .tag:hover{
+            .tag > a:hover{
                 padding: 10px;
         
             }
